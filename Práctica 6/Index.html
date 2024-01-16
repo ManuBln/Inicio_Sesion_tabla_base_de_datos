@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+  <title>Inicio Sesion</title>
+</head>
+
+<body>
+  <style>
+    /* Resetear estilos por defecto del navegador*/
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    label,
+    input,
+    button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    /* Establecer una fuente predeterminada para la página */
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Estilos generales */
+    body {
+      background-image: url(Imagenes/InicioSesion.webp);
+      background-size: cover;
+
+    }
+
+
+
+    /* Contenedor principal */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+
+    /* Formulario de inicio de sesión */
+    form {
+      background-color: hsl(0, 0%, 100%, 0.7);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 5%;
+      margin-bottom: 10%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 5% 10%;
+      border: none;
+      border-radius: 4%;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    #registrarme {
+      margin-bottom: 5%;
+      display: block;
+      margin-top: 5%;
+      text-align: right;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Mensaje de alerta */
+    #alertaInicioSesion {
+      color: red;
+      margin-top: 5%;
+    }
+  </style>
+
+  <header>
+
+
+  </header>
+
+  <main>
+    <div>
+      <form id="formularioInicio" action="inicioSesion.php" method="post">
+        <label for="user">Usuario:</label>
+        <input type="text" id="user" name="user" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <a id="registrarme" href="Registrarse.html">Registrarme</a>
+
+        <button id="botonRegister" type="submit">Iniciar Sesion</button>
+        <p id="alertaInicioSesion"></p>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
